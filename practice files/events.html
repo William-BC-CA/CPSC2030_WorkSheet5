@@ -56,8 +56,41 @@
 	<script>
 		$(document).ready(function(){
 			
-		
+			// hide, show, toggle using click element
+			// $("#btn1").on("click", () => {
+			// 	$(".para1").hide();
+			// })
 
+			$("#btn2").on("click", () => {
+				$(".para1").show();
+			})
+
+			// toggle using dblclick, mouseenter, mouseleave events
+			// $("#btn1").dblclick(function (){
+			// 	$(".para1").toggle();
+			// })
+
+			$("#btn1").on("mouseenter", () => {
+				$(".para1").toggle();
+			})
+
+			$("#btn1").on("mouseleave", () => {
+				$(".para1").toggle();
+			})
+
+			// focus and blur events
+			$("input").focus(function(){
+				$(this).css("background", "pink");
+			})
+
+			$("input").blur(function(){
+				$(this).css("background", "white");
+			})
+
+			// change
+			$("select#gender").change(function(e) {
+				alert(e.target.value);
+			})
 		});
 	</script>
 </body>
