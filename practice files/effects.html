@@ -75,8 +75,43 @@
 
 	<script>
 		$(document).ready(function(){
-			
+			$("#btnFadeOut").on("click", () => {
+				// $("#box").fadeOut();
+				$("#box").fadeOut(3000);
+			})
+
+			$("#btnFadeIn").on("click", () => {
+				// $("#box").fadeIn();
+				$("#box").fadeIn(3000);
+			})
+
+			$("#btnFadeTog").click(function(){
+				// $("#box").fadeToggle();
+				$("#box").fadeToggle(2000);
+			})
       
+			// Might not need for assignment
+			$("#btnSlideUp").click(function(){
+				// $("#box").fadeToggle();
+				$("#box").slideUp(2000);
+			})
+
+			$("#btnSlideDown").click(function(){
+				// $("#box").fadeToggle();
+				$("#box").slideDown(2000);
+			})
+
+			$("#btnSlideTog").click(function(){
+				$("#box").slideToggle(2000);
+			})
+
+			// $("#btnStop").click(function(){
+			// 	$("#box").stop();
+			// })
+
+			$("#btnStop").on("click", () => {
+				$("#box").stop();
+			})
 		});
 	</script>
 </body>
