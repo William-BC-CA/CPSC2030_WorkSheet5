@@ -112,6 +112,43 @@
 			$("#btnStop").on("click", () => {
 				$("#box").stop();
 			})
+
+			$("#moveRight").on("click", () =>{
+				$("#box2").animate({
+					left: 500,
+					height: '300px',
+					width: '300px',
+					opacity: '0.5'
+				})
+			})
+
+			$("#moveLeft").on("click", () =>{
+				$("#box2").animate({
+					left: 0,
+					height: '100px',
+					width: '100px',
+					opacity: '1'
+				})
+			})
+
+			$("#moveAround").on("click", () =>{
+				let box = $("#box2");
+				box.animate({
+					left: 300,
+
+				});
+				box.animate({
+					top: 300,
+				});
+				box.animate({
+					left: 0,
+					top: 300
+				});
+				box.animate({
+					left: 0,
+					top: 0
+				});
+			})
 		});
 	</script>
 </body>

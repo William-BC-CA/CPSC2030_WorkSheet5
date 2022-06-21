@@ -9,10 +9,13 @@ nav ul li{
 nav ul a{
     color: white;
     text-decoration: none;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 nav ul a:hover{
     text-decoration: underline;
+    font-size: 32px;
 }
 
 .wrapper {
